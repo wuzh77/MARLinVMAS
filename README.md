@@ -1,4 +1,10 @@
+
+
+# MARL in VMAS
+
 This repo is the final assignment of Game theory and Reinforcement learning of Sun Yat-sen University (autumn of 21).I implemented three MARL algorithms, IPPO, CPPO and MAPPO.And I apply them in [VMAS](https://github.com/proroklab/VectorizedMultiAgentSimulator)  platform.Also, the algorithms I implemented is better than the original paper.Details are in my paper.
+
+## 1.Code comments
 
 Here I want to write code comments for VMAS.
 
@@ -58,6 +64,18 @@ Finally, you can get the dimension of observations and actions of each agents by
 n_states = envs.observation_space[0].shape[0]
 n_actions = env.action_space[0].n
 ```
+
+## 2.Installation
+
+Here I give an example installation on CPU.
+
+```
+conda create -n MARLvmas python==3.8
+conda activate MARLvmas
+pip install vmas
+```
+
+## 3. Result
 
 ![avatar](./images/MARL_res.png)
 
